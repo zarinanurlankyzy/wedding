@@ -50,12 +50,9 @@ function sendAnswer(answer){
 // ===============================
 
 
-let music = document.createElement("audio");
-
-music.src = "music/song.mp3";
+let music = new Audio("song.mp3");
 
 music.loop = true;
-
 
 let playing = false;
 
