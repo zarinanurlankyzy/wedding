@@ -245,7 +245,6 @@ Asem-ai
 </section>
 
 <!-- ТӨРТІНШІ БЕТ -->
-<!-- ТӨРТІНШІ БЕТ -->
 
 <section class="thanks">
 
@@ -258,15 +257,15 @@ Asem-ai
             РАСТАУЫҢЫЗДЫ СҰРАЙМЫЗ!
         </p>
 
-        <form name="wedding-survey" method="POST" data-netlify="true">
 
-            <input type="hidden" name="form-name" value="wedding-survey">
+        <div class="survey-form">
 
             <input
                 type="text"
-                name="guestName"
+                id="guestName"
                 placeholder="ЕСІМ(ДЕР)ІҢІЗ"
                 required>
+
 
             <p class="survey-note">
                 (ЖҰБАЙЫҢЫЗБЕН КЕЛЕТІН БОЛСАҢЫЗ,<br>
@@ -274,35 +273,46 @@ Asem-ai
                 ЖАЗУЫҢЫЗДЫ СҰРАЙМЫЗ)
             </p>
 
+
             <div class="question">
                 ҚАТЫСУЫҢЫЗ:
             </div>
+
 
             <label class="radio">
                 <input
                     type="radio"
                     name="answer"
-                    value="Қатысамын"
-                    required>
+                    value="Қатысамын">
                 <span>ҚАТЫСАМЫН</span>
             </label>
+
 
             <label class="radio">
                 <input
                     type="radio"
                     name="answer"
                     value="Өкінішке қарай, келе алмаймын">
+
                 <span>
                     ӨКІНІШКЕ ҚАРАЙ,<br>
                     КЕЛЕ АЛМАЙМЫН
                 </span>
+
             </label>
 
-           <button class="send-btn" onclick="submitSurvey()">
-    ЖІБЕРУ
-</button>
 
-      </div>
+            <button 
+                class="send-btn" 
+                type="button"
+                onclick="submitSurvey()">
+
+                ЖІБЕРУ
+
+            </button>
+
+
+        </div>
 
     </div>
 
