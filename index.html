@@ -257,41 +257,56 @@ Asem-ai
             РАСТАУЫҢЫЗДЫ СҰРАЙМЫЗ!
         </p>
 
-        <input
-            type="text"
-            id="guestName"
-            placeholder="ЕСІМ(ДЕР)ІҢІЗ">
+        <form name="wedding-survey" method="POST" data-netlify="true">
 
-        <p class="survey-note">
-            (ЖҰБАЙЫҢЫЗБЕН КЕЛЕТІН БОЛСАҢЫЗ,<br>
-            ЕКЕУІҢІЗДІҢ ДЕ ЕСІМДЕРІҢІЗДІ<br>
-            ЖАЗУЫҢЫЗДЫ СҰРАЙМЫЗ)
-        </p>
+            <input type="hidden" name="form-name" value="wedding-survey">
 
-        <div class="question">
-            ҚАТЫСУЫҢЫЗ:
-        </div>
-
-        <label class="radio">
             <input
-    type="radio"
-    name="answer"
-    value="Қатысамын">
-            <span>ҚАТЫСАМЫН</span>
-        </label>
+                type="text"
+                name="guestName"
+                placeholder="ЕСІМ(ДЕР)ІҢІЗ"
+                required>
 
-       <label class="radio">
-    <input
-        type="radio"
-        name="answer"
-        value="Өкінішке қарай, келе алмаймын">
-    <span>ӨКІНІШКЕ ҚАРАЙ,<br>КЕЛЕ АЛМАЙМЫН</span>
-</label>
-        <button class="send-btn"
-                onclick="submitSurvey()">
-            ЖІБЕРУ
-        </button>
+            <p class="survey-note">
+                (ЖҰБАЙЫҢЫЗБЕН КЕЛЕТІН БОЛСАҢЫЗ,<br>
+                ЕКЕУІҢІЗДІҢ ДЕ ЕСІМДЕРІҢІЗДІ<br>
+                ЖАЗУЫҢЫЗДЫ СҰРАЙМЫЗ)
+            </p>
+
+            <div class="question">
+                ҚАТЫСУЫҢЫЗ:
+            </div>
+
+            <label class="radio">
+                <input
+                    type="radio"
+                    name="answer"
+                    value="Қатысамын"
+                    required>
+                <span>ҚАТЫСАМЫН</span>
+            </label>
+
+
+            <label class="radio">
+                <input
+                    type="radio"
+                    name="answer"
+                    value="Өкінішке қарай, келе алмаймын">
+                <span>
+                    ӨКІНІШКЕ ҚАРАЙ,<br>
+                    КЕЛЕ АЛМАЙМЫН
+                </span>
+            </label>
+
+
+            <button class="send-btn" type="submit">
+                ЖІБЕРУ
+            </button>
+
+        </form>
 
     </div>
+    
+</section>
 
 </section>
