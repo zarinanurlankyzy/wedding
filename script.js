@@ -93,3 +93,19 @@ function playMusic(){
     }
 
 }
+
+function submitSurvey(){
+
+    const selected=document.querySelector('input[name="answer"]:checked');
+
+    if(!selected){
+
+        alert("Жауапты таңдаңыз 🤍");
+
+        return;
+
+    }
+
+    sendAnswer(selected.value);
+
+}
