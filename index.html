@@ -248,71 +248,47 @@ Asem-ai
 
 <section class="thanks">
 
+    <div class="survey">
 
-<div class="thanks-content">
+        <h3>Сауалнама</h3>
 
+        <p class="survey-subtitle">
+            ТОЙҒА ҚАТЫСУЫҢЫЗДЫ<br>
+            РАСТАУЫҢЫЗДЫ СҰРАЙМЫЗ!
+        </p>
 
-<h3>
-Бізбен бірге<br>
-осы ерекше күнді<br>
-бөліскеніңізге<br>
-қуаныштымыз
-</h3>
+        <input
+            type="text"
+            id="guestName"
+            placeholder="ЕСІМ(ДЕР)ІҢІЗ">
 
+        <p class="survey-note">
+            (ЖҰБАЙЫҢЫЗБЕН КЕЛЕТІН БОЛСАҢЫЗ,<br>
+            ЕКЕУІҢІЗДІҢ ДЕ ЕСІМДЕРІҢІЗДІ<br>
+            ЖАЗУЫҢЫЗДЫ СҰРАЙМЫЗ)
+        </p>
 
+        <div class="question">
+            ҚАТЫСУЫҢЫЗ:
+        </div>
 
-<div class="flower">
-✿
-</div>
+        <label class="radio">
+            <input type="radio" name="answer"
+                   onclick="sendAnswer('Қатысамын')">
+            <span>ҚАТЫСАМЫН</span>
+        </label>
 
+        <label class="radio">
+            <input type="radio" name="answer"
+                   onclick="sendAnswer('Өкінішке қарай, келе алмаймын')">
+            <span>ӨКІНІШКЕ ҚАРАЙ,<br>КЕЛЕ АЛМАЙМЫН</span>
+        </label>
 
+        <button class="send-btn"
+                onclick="submitSurvey()">
+            ЖІБЕРУ
+        </button>
 
-
-<p class="welcome">
-Сіздерді асыға<br>
-күтеміз
-</p>
-
-
-
-
-
-<div class="rsvp-box">
-
-
-<h4>
-Қатысуыңызды растаңыз
-</h4>
-
-
-<input 
-type="text" 
-id="guestName"
-placeholder="Атыңызды жазыңыз"
->
-
-
-
-<div class="choice">
-
-
-<button onclick="sendAnswer('Келемін 🤍')">
-Келемін 🤍
-</button>
-
-
-<button onclick="sendAnswer('Келмеймін')">
-Келмеймін
-</button>
-
-
-</div>
-
-</div>
-
-
-
-</div>
-
+    </div>
 
 </section>
