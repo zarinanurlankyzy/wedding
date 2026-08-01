@@ -128,21 +128,15 @@ body{
 }
 
 
-
 /* =========================
         2 СТРАНИЦА
 ========================= */
 
-
 .invite{
-
-
-    width:100%;
 
     min-height:100vh;
 
-    background:white;
-
+    background:#ffffff;
 
     display:flex;
 
@@ -150,115 +144,143 @@ body{
 
     align-items:center;
 
-
-    padding:40px 25px;
-
     text-align:center;
 
+    padding:60px 30px;
 
 }
-
-
 
 .invite-content{
 
-    max-width:850px;
+    max-width:760px;
 
 }
-
-
 
 .invite h3{
 
+    font-family:'Ballet',cursive;
 
-    font-family:'Cormorant Garamond',serif;
+    font-size:74px;
 
-    font-size:60px;
+    font-weight:400;
 
     color:#B07C4C;
 
-    font-weight:600;
-
-    margin-bottom:35px;
-
+    margin-bottom:20px;
 
 }
 
-
-
-.line{
-
-    width:120px;
-
-    height:1px;
-
-    background:#C8A46B;
-
-    margin:25px auto;
-
-
-}
-
-
-
-.invite p{
-
+.invite-top{
 
     font-family:Georgia,serif;
 
-    font-size:25px;
+    font-size:29px;
 
-    line-height:1.9;
+    font-weight:600;
+
+    line-height:1.7;
 
     color:#444;
 
+    margin-bottom:45px;
 
 }
 
-
-
-.owners{
-
-    margin-top:45px;
-
-}
-
-
-
-.owners h4{
-
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:38px;
-
-    color:#B07C4C;
-
-    font-weight:600;
-
-    margin-bottom:15px;
-
-
-}
-
-
-
-.owners p{
-
+.invite-text{
 
     font-family:Georgia,serif;
 
-    font-size:22px;
+    font-size:28px;
+
+    font-weight:600;
+
+    color:#444;
+
+    margin-bottom:25px;
+
+}
+
+.couple{
+
+    margin:20px 0 35px;
+
+}
+
+.couple .name{
+
+    font-family:'Ballet',cursive;
+
+    font-size:78px;
+
+    color:#B07C4C;
+
+    font-weight:400;
+
+    line-height:1.05;
+
+}
+
+.couple .and{
+
+    font-family:'Ballet',cursive;
+
+    font-size:62px;
+
+    color:#B07C4C;
+
+    margin:10px 0;
+
+}
+
+.invite-bottom{
+
+    font-family:Georgia,serif;
+
+    font-size:28px;
+
+    font-weight:600;
 
     line-height:1.8;
 
     color:#444;
 
+    margin-top:20px;
 
 }
 
+.owners{
 
+    margin-top:60px;
 
+}
+
+.owners h4{
+
+    font-family:'Ballet',cursive;
+
+    font-size:54px;
+
+    color:#B07C4C;
+
+    font-weight:400;
+
+    margin-bottom:18px;
+
+}
+
+.owners p{
+
+    font-family:Georgia,serif;
+
+    font-size:25px;
+
+    font-weight:600;
+
+    line-height:1.8;
+
+    color:#444;
+
+}
 
 
 /* =========================
@@ -2587,5 +2609,62 @@ to{
 
     box-shadow:0 5px 15px rgba(0,0,0,.1);
 
+
+}
+@media(max-width:768px){
+
+.invite{
+
+    padding:40px 22px;
+
+}
+
+.invite h3{
+
+    font-size:56px;
+
+}
+
+.invite-top{
+
+    font-size:20px;
+
+}
+
+.invite-text{
+
+    font-size:20px;
+
+}
+
+.couple .name{
+
+    font-size:56px;
+
+}
+
+.couple .and{
+
+    font-size:46px;
+
+}
+
+.invite-bottom{
+
+    font-size:20px;
+
+}
+
+.owners h4{
+
+    font-size:42px;
+
+}
+
+.owners p{
+
+    font-size:19px;
+
+}
 
 }
