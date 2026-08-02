@@ -2682,3 +2682,11 @@ to{
 }
 
 }
+.hall-name{
+    font-family:'Forum', serif;
+    font-size:44px;
+    font-weight:400;
+    color:#B07C4C;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
