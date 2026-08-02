@@ -479,17 +479,19 @@ body{
 
 
 
-.location h5 {
+.location h5{
 
-    font-family: 'Marcellus', serif;
+    font-family:'Forum', serif;
 
-    font-size: 40px;
+    font-size:44px;
 
-    color: #B07C4C;
+    color:#B07C4C;
 
-    font-weight: 400;
+    font-weight:400;
 
-    letter-spacing: 1px;
+    letter-spacing:3px;
+
+    text-transform:uppercase;
 
 }
 
