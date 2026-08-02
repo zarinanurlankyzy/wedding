@@ -479,17 +479,17 @@ body{
 
 
 
-.location h5{
+.location h5 {
 
+    font-family: 'Cormorant Garamond', serif;
 
-    font-family:'Ballet',cursive;
+    font-size: 42px;
 
-    font-size:55px;
+    color: #B07C4C;
 
-    color:#B07C4C;
+    font-weight: 600;
 
-    font-weight:400;
-
+    letter-spacing: 2px;
 
 }
 
