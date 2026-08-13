@@ -2648,3 +2648,46 @@ to{
     letter-spacing:2px;
     text-transform:uppercase;
 }
+
+/* ФИНАЛЬНОЕ ИСПРАВЛЕНИЕ */
+
+.program h3,
+.program h4 {
+    display: block !important;
+    width: 100% !important;
+
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 38px !important;
+    font-weight: 600 !important;
+
+    color: #B07C4C !important;
+
+    text-align: center !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.program h3 {
+    margin: 0 0 15px 0 !important;
+}
+
+.program h4 {
+    margin: 0 0 20px 0 !important;
+}
+
+.program .time {
+    display: block !important;
+    width: 100% !important;
+
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 38px !important;
+    font-weight: 600 !important;
+
+    color: #B07C4C !important;
+
+    text-align: center !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
