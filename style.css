@@ -281,84 +281,70 @@ body{
     color:#444;
 
 }
-
 /* =========================
         3 СТРАНИЦА
 ========================= */
 
 .program{
-
     width:100%;
-
     min-height:100vh;
 
     background:url("background.jpg") center/cover no-repeat;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     text-align:center;
 
     padding:40px 25px;
-
 }
-
 
 .program-content{
-
-    max-width:500px;
-
     width:100%;
+    max-width:500px;
+    margin:0 auto;
 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-align:center;
 }
 
+/* Той салтанаты */
 
 .program h3{
+    width:100%;
+    margin:0;
 
     font-family:'Cormorant Garamond', serif;
-
     font-size:60px;
+    font-weight:600;
 
     color:#B07C4C;
 
-    font-weight:600;
-
+    text-align:center;
 }
 
+/* Қыркүйек 2026 */
 
 .program h4{
+    width:100%;
+    margin:15px 0 20px;
 
     font-family:Georgia, serif;
-
     font-size:25px;
+    font-weight:400;
 
     color:#444;
 
-    margin:15px 0 20px;
-
+    text-align:center;
 }
 
-
-.time{
-
-    font-family:'Cormorant Garamond', serif;
-
-    font-size:38px;
-
-    color:#B07C4C;
-
-    font-weight:600;
-
-    margin-bottom:30px;
-
-}
-
+/* КАЛЕНДАРЬ */
 
 .calendar{
-
     width:100%;
 
     background:rgba(255,255,255,.7);
@@ -367,124 +353,124 @@ body{
 
     border-radius:20px;
 
+    text-align:center;
 }
-
 
 .week,
 .days{
+    width:100%;
 
     display:grid;
-
-    grid-template-columns:repeat(7, 1fr);
-
+    grid-template-columns:repeat(7,1fr);
     gap:12px;
-
 }
-
 
 .week span{
-
     font-family:Georgia, serif;
-
     color:#B07C4C;
-
     font-weight:bold;
-
+    text-align:center;
 }
 
-
 .days span{
-
     font-family:Georgia, serif;
-
     color:#444;
 
     height:35px;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
+    text-align:center;
 }
 
-
 .days .active{
-
     border:2px solid #C8A46B;
-
     border-radius:50%;
 
     width:38px;
-
     height:38px;
 
     margin:auto;
 
     color:#B07C4C;
-
 }
 
+/* АДРЕС */
 
 .location{
-
     width:100%;
 
     margin-top:30px;
 
     text-align:center;
 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
-
 
 .location-icon{
-
     font-size:28px;
-
 }
 
-
 .location p{
+    width:100%;
+
+    margin:0;
 
     font-family:Georgia, serif;
+    font-size:18px;
 
     color:#444;
 
-    font-size:18px;
-
+    text-align:center;
 }
 
-
 .location h5{
-
-    font-family:'Forum', serif;
-
-    font-size:44px;
-
-    color:#B07C4C;
-
-    font-weight:400;
-
-    letter-spacing:2px;
-
-    text-transform:none;
+    width:100%;
 
     margin:10px 0;
 
+    font-family:'Forum', serif;
+    font-size:44px;
+    font-weight:400;
+
+    color:#B07C4C;
+
+    letter-spacing:2px;
+    text-transform:none;
+
+    text-align:center;
 }
 
-
 .location span{
+    width:100%;
 
     font-family:Georgia, serif;
+    font-size:18px;
+    line-height:1.7;
 
     color:#444;
 
-    font-size:18px;
+    text-align:center;
+}
 
-    line-height:1.7;
+/* ВРЕМЯ */
 
+.program .time{
+    width:100%;
+
+    margin:30px 0 0;
+
+    font-family:'Cormorant Garamond', serif;
+    font-size:38px;
+    font-weight:600;
+
+    color:#B07C4C;
+
+    text-align:center;
 }
 
 
