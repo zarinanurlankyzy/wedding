@@ -313,13 +313,12 @@ body{
 }
 
 /* Той салтанаты */
-
 .program h3{
     width:100%;
     margin:0;
 
     font-family:'Cormorant Garamond', serif;
-    font-size:60px;
+    font-size:38px;
     font-weight:600;
 
     color:#B07C4C;
@@ -333,15 +332,14 @@ body{
     width:100%;
     margin:15px 0 20px;
 
-    font-family:Georgia, serif;
-    font-size:25px;
-    font-weight:400;
+    font-family:'Cormorant Garamond', serif;
+    font-size:38px;
+    font-weight:600;
 
-    color:#444;
+    color:#B07C4C;
 
     text-align:center;
 }
-
 /* КАЛЕНДАРЬ */
 
 .calendar{
