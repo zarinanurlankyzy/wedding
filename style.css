@@ -14,1635 +14,254 @@ body{
 }
 
 
-/* =========================
-        1 СТРАНИЦА
-========================= */
+/* =====================================================
+   1 СТРАНИЦА
+===================================================== */
 
 .hero{
-
     width:100%;
     height:100vh;
 
     background:url("background.jpg") center/cover no-repeat;
+
     display:flex;
     justify-content:center;
     align-items:center;
 
     position:relative;
-
 }
-
 
 .overlay{
-
     position:absolute;
     inset:0;
-
     background:rgba(255,255,255,0.15);
-
 }
-
-
 
 .hero-content{
-
     position:relative;
     z-index:2;
-
     text-align:center;
-
 }
-
-
 
 .names{
-
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     line-height:.8;
-
 }
-
-
 
 .hero h1{
-
     font-family:'Ballet',cursive;
-
     font-size:95px;
-
     font-weight:400;
-
     color:#B07C4C;
-
 }
-
-
 
 .iliyas{
-
     align-self:flex-start;
-
     margin-left:-90px;
 
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
 }
-
-
 
 .amp{
-
     font-size:80px;
-
     margin:20px 0;
 
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:.5s;
 }
-
-
 
 .aruzhan{
-
     align-self:flex-end;
-
     margin-right:-90px;
 
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:1s;
 }
 
-
-
 .hero h2{
-
     margin-top:40px;
 
     font-family:Georgia,serif;
-
     font-size:26px;
-
     color:#444;
-
     letter-spacing:2px;
 
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:1.5s;
 }
 
 
-/* =========================
-        2 СТРАНИЦА
-========================= */
+/* =====================================================
+   2 СТРАНИЦА
+===================================================== */
 
 .invite{
-
+    width:100%;
     min-height:100vh;
 
     background:#ffffff;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
+    padding:40px 25px;
+
     text-align:center;
-
-    padding:60px 30px;
-
 }
 
 .invite-content{
-
-    max-width:760px;
-
-}
-
-.invite h3{
-
-    font-family:'Ballet',cursive;
-
-    font-size:74px;
-
-    font-weight:400;
-
-    color:#B07C4C;
-
-    margin-bottom:20px;
-
-}
-
-.invite-top{
-
-    font-family:Georgia,serif;
-
-    font-size:29px;
-
-    font-weight:600;
-
-    line-height:1.7;
-
-    color:#444;
-
-    margin-bottom:45px;
-
-}
-
-.invite-text{
-
-    font-family:Georgia,serif;
-
-    font-size:28px;
-
-    font-weight:600;
-
-    color:#444;
-
-    margin-bottom:25px;
-
-}
-
-.couple{
-
-    margin:20px 0 35px;
-
-}
-
-.couple .name{
-
-    font-family:'Ballet',cursive;
-
-    font-size:78px;
-
-    color:#B07C4C;
-
-    font-weight:400;
-
-    line-height:1.05;
-
-}
-
-.couple .and{
-
-    font-family:'Ballet',cursive;
-
-    font-size:62px;
-
-    color:#B07C4C;
-
-    margin:10px 0;
-
-}
-
-.invite-bottom{
-
-    font-family:Georgia,serif;
-
-    font-size:28px;
-
-    font-weight:600;
-
-    line-height:1.8;
-
-    color:#444;
-
-    margin-top:20px;
-
-}
-
-.owners{
-
-    margin-top:60px;
-
-}
-
-.owners h4{
-
-    font-family:'Ballet',cursive;
-
-    font-size:54px;
-
-    color:#B07C4C;
-
-    font-weight:400;
-
-    margin-bottom:18px;
-
-}
-
-.owners p{
-
-    font-family:Georgia,serif;
-
-    font-size:25px;
-
-    font-weight:600;
-
-    line-height:1.8;
-
-    color:#444;
-
-}
-/* =========================
-        3 СТРАНИЦА
-========================= */
-
-.program{
     width:100%;
-    min-height:100vh;
-
-    background:url("background.jpg") center/cover no-repeat;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:40px 25px;
-}
-
-.program-content{
-    width:100%;
-    max-width:500px;
-    margin:0 auto;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
-    text-align:center;
-}
-
-/* Той салтанаты */
-.program h3{
-    width:100%;
-    margin:0;
-
-    font-family:'Cormorant Garamond', serif;
-    font-size:38px;
-    font-weight:600;
-
-    color:#B07C4C;
-
-    text-align:center;
-}
-
-/* Қыркүйек 2026 */
-
-.program h4{
-    width:100%;
-    margin:15px 0 20px;
-
-    font-family:'Cormorant Garamond', serif;
-    font-size:38px;
-    font-weight:600;
-
-    color:#B07C4C;
-
-    text-align:center;
-}
-/* КАЛЕНДАРЬ */
-
-.calendar{
-    width:100%;
-
-    background:rgba(255,255,255,.7);
-
-    padding:25px;
-
-    border-radius:20px;
-
-    text-align:center;
-}
-
-.week,
-.days{
-    width:100%;
-
-    display:grid;
-    grid-template-columns:repeat(7,1fr);
-    gap:12px;
-}
-
-.week span{
-    font-family:Georgia, serif;
-    color:#B07C4C;
-    font-weight:bold;
-    text-align:center;
-}
-
-.days span{
-    font-family:Georgia, serif;
-    color:#444;
-
-    height:35px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-}
-
-.days .active{
-    border:2px solid #C8A46B;
-    border-radius:50%;
-
-    width:38px;
-    height:38px;
-
-    margin:auto;
-
-    color:#B07C4C;
-}
-
-/* АДРЕС */
-
-.location{
-    width:100%;
-
-    margin-top:30px;
-
-    text-align:center;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.location-icon{
-    font-size:28px;
-}
-
-.location p{
-    width:100%;
-
-    margin:0;
-
-    font-family:Georgia, serif;
-    font-size:18px;
-
-    color:#444;
-
-    text-align:center;
-}
-
-.location h5{
-    width:100%;
-
-    margin:10px 0;
-
-    font-family:'Forum', serif;
-    font-size:44px;
-    font-weight:400;
-
-    color:#B07C4C;
-
-    letter-spacing:2px;
-    text-transform:none;
-
-    text-align:center;
-}
-
-.location span{
-    width:100%;
-
-    font-family:Georgia, serif;
-    font-size:18px;
-    line-height:1.7;
-
-    color:#444;
-
-    text-align:center;
-}
-
-/* ВРЕМЯ */
-
-.program .time{
-    width:100%;
-
-    margin:30px 0 0;
-
-    font-family:'Cormorant Garamond', serif;
-    font-size:38px;
-    font-weight:600;
-
-    color:#B07C4C;
-
-    text-align:center;
-}
-
-
-
-/* =========================
-        4 СТРАНИЦА
-========================= */
-
-/* =========================
-        4 СТРАНИЦА
-========================= */
-
-.thanks{
-
-    min-height:100vh;
-
-    background:url("background.jpg") center/cover no-repeat;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:40px 25px;
-
-}
-
-.survey{
-
-    width:100%;
-
-    max-width:430px;
-
-}
-
-.survey h3{
-
-    text-align:center;
-
-    font-family:'Ballet',cursive;
-
-    font-size:58px;
-
-    color:#B07C4C;
-
-    font-weight:400;
-
-    margin-bottom:18px;
-
-}
-
-.survey-subtitle{
-
-    text-align:center;
-
-    font-family:Georgia,serif;
-
-    font-size:22px;
-
-    font-weight:600;
-
-    color:#444;
-
-    line-height:1.4;
-
-    letter-spacing:1px;
-
-    margin-bottom:30px;
-
-}
-
-.survey input[type=text]{
-
-    width:100%;
-
-    height:48px;
-
-    border:1px solid #d5d5d5;
-
-    border-radius:30px;
-
-    padding-left:18px;
-
-    font-size:18px;
-
-    font-family:Georgia,serif;
-
-    outline:none;
-
-    background:white;
-
-}
-
-.survey input::placeholder{
-
-    color:#777;
-
-    font-weight:600;
-
-}
-
-.survey-note{
-
-    margin-top:18px;
-
-    font-size:15px;
-
-    font-family:Georgia,serif;
-
-    color:#666;
-
-    line-height:1.5;
-
-    text-align:left;
-
-}
-
-.question{
-
-    margin-top:25px;
-
-    margin-bottom:15px;
-
-    font-size:18px;
-
-    font-family:Georgia,serif;
-
-    font-weight:700;
-
-    color:#444;
-
-}
-
-.radio{
-
-    display:flex;
-
-    align-items:flex-start;
-
-    gap:12px;
-
-    margin-bottom:18px;
-
-    cursor:pointer;
-
-}
-
-.radio input{
-
-    margin-top:4px;
-
-}
-
-.radio span{
-
-    font-family:Georgia,serif;
-
-    font-size:18px;
-
-    color:#444;
-
-    line-height:1.5;
-
-}
-
-.send-btn{
-
-    display:block;
-
-    margin:35px auto 0;
-
-    width:170px;
-
-    height:44px;
-
-    border:none;
-
-    border-radius:30px;
-
-    background:#B07C4C;
-
-    color:white;
-
-    font-family:Georgia,serif;
-
-    font-size:18px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.send-btn:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:0 10px 20px rgba(176,124,76,.25);
-
-}
-
-
-/* =========================
-        МОБИЛЬНАЯ ВЕРСИЯ
-========================= */
-
-
-@media(max-width:768px){
-
-
-.hero h1{
-
-    font-size:65px;
-
-}
-
-
-.iliyas{
-
-    margin-left:-50px;
-
-}
-
-
-.aruzhan{
-
-    margin-right:-50px;
-
-}
-
-
-.amp{
-
-    font-size:60px;
-
-}
-
-
-
-.hero h2{
-
-    font-size:20px;
-
-}
-
-
-
-.invite h3{
-
-    font-size:42px;
-
-}
-
-
-
-.invite p{
-
-    font-size:19px;
-
-}
-
-
-
-.owners h4{
-
-    font-size:32px;
-
-}
-
-
-
-.owners p{
-
-    font-size:18px;
-
-}
-
-
-
-.program h3{
-
-    font-size:45px;
-
-}
-
-
-
-.time{
-
-    font-size:32px;
-
-}
-
-
-
-.thanks h3{
-
-    font-size:42px;
-
-}
-
-
-
-.welcome{
-
-    font-size:20px;
-
-}
-
-
-
-.choice{
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-
-
-.choice button{
-
-    width:200px;
-
-}
-
-
-}
-/* =========================
-        ПЛАВНЫЕ АНИМАЦИИ
-========================= */
-
-
-/* первая страница */
-
-.hero .iliyas{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.hero .amp{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.hero .aruzhan{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1s;
-
-}
-
-
-
-.hero h2{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.5s;
-
-}
-
-
-
-/* вторая страница */
-
-
-.invite h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.invite p{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.6s;
-
-}
-
-
-
-.owners{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-/* третья страница */
-
-
-.program h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.program h4{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.4s;
-
-}
-
-
-
-.calendar{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.8s;
-
-}
-
-
-
-.location{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-/* четвёртая страница */
-
-
-.thanks h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.flower{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.welcome{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.8s;
-
-}
-
-
-
-.rsvp-box{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-
-/* сама анимация */
-
-
-@keyframes fadeUp{
-
-
-from{
-
-    opacity:0;
-
-    transform:translateY(40px);
-
-}
-
-
-
-to{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-
-}
-
-/* =========================
-        КРАСИВЫЕ АНИМАЦИИ
-========================= */
-
-
-/* Общая анимация */
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-
-
-/* ===== 1 СТРАНИЦА ===== */
-
-
-.iliyas{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.amp{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.aruzhan{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1s;
-
-}
-
-
-
-.hero h2{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.5s;
-
-}
-
-
-
-
-/* ===== 2 СТРАНИЦА ===== */
-
-
-.invite h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.invite-content p{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.6s;
-
-}
-
-
-
-.owners{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-/* ===== 3 СТРАНИЦА ===== */
-
-
-.program h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.program h4{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.4s;
-
-}
-
-
-
-.time{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.7s;
-
-}
-
-
-
-.calendar{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1s;
-
-}
-
-
-
-.location{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.3s;
-
-}
-
-
-
-
-/* ===== 4 СТРАНИЦА ===== */
-
-
-.thanks h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.flower{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.welcome{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.8s;
-
-}
-
-
-
-.rsvp-box{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-.music-btn{
-
-
-    position:fixed;
-
-    right:20px;
-
-    bottom:20px;
-
-
-    width:55px;
-
-    height:55px;
-
-
-    border-radius:50%;
-
-
-    border:1px solid #C8A46B;
-
-
-    background:rgba(255,255,255,.8);
-
-
-    color:#B07C4C;
-
-
-    font-size:24px;
-
-
-    z-index:999;
-
-
-    cursor:pointer;
-
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-
-}
-style_fixed.css
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    overflow-x:hidden;
-    background:#F9F8F4;
-}
-
-
-/* =========================
-        1 СТРАНИЦА
-========================= */
-
-.hero{
-
-    width:100%;
-    height:100vh;
-
-    background:url("background.jpg") center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    position:relative;
-
-}
-
-
-.overlay{
-
-    position:absolute;
-    inset:0;
-
-    background:rgba(255,255,255,0.15);
-
-}
-
-
-
-.hero-content{
-
-    position:relative;
-    z-index:2;
-
-    text-align:center;
-
-}
-
-
-
-.names{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    line-height:.8;
-
-}
-
-
-
-.hero h1{
-
-    font-family:'Ballet',cursive;
-
-    font-size:95px;
-
-    font-weight:400;
-
-    color:#B07C4C;
-
-}
-
-
-
-.iliyas{
-
-    align-self:flex-start;
-
-    margin-left:-90px;
-
-}
-
-
-
-.amp{
-
-    font-size:80px;
-
-    margin:20px 0;
-
-}
-
-
-
-.aruzhan{
-
-    align-self:flex-end;
-
-    margin-right:-90px;
-
-}
-
-
-
-.hero h2{
-
-    margin-top:40px;
-
-    font-family:Georgia,serif;
-
-    font-size:26px;
-
-    color:#444;
-
-    letter-spacing:2px;
-
-}
-
-
-
-/* =========================
-        2 СТРАНИЦА
-========================= */
-
-
-.invite{
-
-
-    width:100%;
-
-    min-height:100vh;
-
-    background:white;
-
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-
-    padding:40px 25px;
-
-    text-align:center;
-
-
-}
-
-
-
-.invite-content{
-
     max-width:850px;
-
 }
 
-
-
 .invite h3{
-
-
     font-family:'Cormorant Garamond',serif;
-
     font-size:60px;
-
     color:#B07C4C;
-
     font-weight:600;
 
     margin-bottom:35px;
 
-
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
 }
 
-
-
 .line{
-
     width:120px;
-
     height:1px;
 
     background:#C8A46B;
 
     margin:25px auto;
-
-
 }
-
-
 
 .invite p{
-
-
     font-family:Georgia,serif;
-
     font-size:25px;
-
     line-height:1.9;
-
     color:#444;
 
-
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:.6s;
 }
-
-
 
 .owners{
-
     margin-top:45px;
 
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:1.2s;
 }
 
-
-
 .owners h4{
-
-
     font-family:'Cormorant Garamond',serif;
-
     font-size:38px;
-
     color:#B07C4C;
-
     font-weight:600;
 
     margin-bottom:15px;
-
-
 }
-
-
 
 .owners p{
-
-
     font-family:Georgia,serif;
-
     font-size:22px;
-
     line-height:1.8;
-
     color:#444;
-
-
 }
 
 
-
-
-
-/* =========================
-        3 СТРАНИЦА
-========================= */
-
+/* =====================================================
+   3 СТРАНИЦА
+===================================================== */
 
 .program{
-
-
     width:100%;
-
     min-height:100vh;
-
 
     background:url("background.jpg") center/cover no-repeat;
 
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
 
     text-align:center;
 
-
     padding:40px 25px;
-
-
 }
-
-
-
 
 .program-content{
-
+    width:100%;
     max-width:500px;
 
+    margin:0 auto;
+
+    text-align:center;
 }
 
 
+/* ---------- ЗАГОЛОВОК ---------- */
 
 .program h3{
+    display:block;
+    width:100%;
 
+    margin:0 0 10px 0;
 
     font-family:'Cormorant Garamond',serif;
 
     font-size:60px;
+    line-height:1.1;
 
     color:#B07C4C;
 
     font-weight:600;
 
+    text-align:center;
+
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
 }
 
 
+/* ---------- ДАТА ---------- */
 
 .program h4{
+    display:block;
+    width:100%;
 
-
-    font-family:Georgia,serif;
-
-    font-size:25px;
-
-    color:#444;
-
-    margin:15px 0 20px;
-
-}
-
-
-
-.time{
-
+    margin:0 0 25px 0;
 
     font-family:'Cormorant Garamond',serif;
 
     font-size:38px;
+    line-height:1.2;
 
     color:#B07C4C;
 
     font-weight:600;
 
-    margin-bottom:30px;
+    text-align:center;
 
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:.4s;
 }
 
 
-
+/* ---------- КАЛЕНДАРЬ ---------- */
 
 .calendar{
+    width:100%;
 
+    margin:0 auto;
 
     background:rgba(255,255,255,.7);
 
@@ -1650,38 +269,33 @@ body{
 
     border-radius:20px;
 
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:.8s;
 }
-
-
 
 .week,
 .days{
-
     display:grid;
 
     grid-template-columns:repeat(7,1fr);
 
     gap:12px;
 
+    width:100%;
 }
 
-
-
 .week span{
-
     font-family:Georgia,serif;
 
     color:#B07C4C;
 
     font-weight:bold;
 
+    text-align:center;
 }
 
-
-
 .days span{
-
-
     font-family:Georgia,serif;
 
     color:#444;
@@ -1691,51 +305,47 @@ body{
     display:flex;
 
     justify-content:center;
-
     align-items:center;
 
+    text-align:center;
 }
 
-
-
 .days .active{
+    width:38px;
+    height:38px;
 
+    margin:auto;
 
     border:2px solid #C8A46B;
 
     border-radius:50%;
 
-    width:38px;
-
-    height:38px;
-
-    margin:auto;
-
     color:#B07C4C;
-
 }
 
 
-
-
+/* ---------- АДРЕС ---------- */
 
 .location{
+    width:100%;
 
-    margin-top:30px;
+    margin:30px auto 0;
 
+    text-align:center;
+
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:1.2s;
 }
-
-
 
 .location-icon{
-
     font-size:28px;
 
+    text-align:center;
 }
 
-
-
 .location p{
+    margin:8px 0;
 
     font-family:Georgia,serif;
 
@@ -1743,28 +353,37 @@ body{
 
     font-size:18px;
 
+    text-align:center;
 }
 
-
-
 .location h5{
+    display:block;
 
+    width:100%;
 
-    font-family:'Ballet',cursive;
+    margin:10px 0;
 
-    font-size:55px;
+    font-family:'Forum',serif;
+
+    font-size:44px;
+
+    line-height:1.2;
 
     color:#B07C4C;
 
     font-weight:400;
 
+    letter-spacing:2px;
 
+    text-align:center;
+
+    text-transform:none;
 }
 
-
-
 .location span{
+    display:block;
 
+    width:100%;
 
     font-family:Georgia,serif;
 
@@ -1774,92 +393,84 @@ body{
 
     line-height:1.7;
 
-
+    text-align:center;
 }
 
 
+/* ---------- ВРЕМЯ ---------- */
 
-
-
-/* =========================
-        4 СТРАНИЦА
-========================= */
-
-
-.thanks{
-
+.program .time{
+    display:block;
 
     width:100%;
 
-    min-height:100vh;
-
-
-    background:url("background.jpg") center/cover no-repeat;
-
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-
-    text-align:center;
-
-
-    padding:40px 25px;
-
-
-}
-
-
-
-.thanks-content{
-
-    max-width:500px;
-
-}
-
-
-
-
-.thanks h3{
-
+    margin:30px auto 0;
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:58px;
+    font-size:38px;
 
+    line-height:1.2;
+
+    color:#B07C4C;
+
+    font-weight:600;
+
+    text-align:center;
+}
+
+
+/* =====================================================
+   4 СТРАНИЦА
+===================================================== */
+
+.thanks{
+    width:100%;
+    min-height:100vh;
+
+    background:url("background.jpg") center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 25px;
+}
+
+.thanks-content{
+    width:100%;
+    max-width:500px;
+}
+
+.thanks h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
     line-height:1.25;
 
     color:#B07C4C;
 
     font-weight:600;
 
-
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
 }
 
-
-
-
 .flower{
-
-
     font-size:35px;
 
     color:#B07C4C;
 
     margin:30px 0;
 
-
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:.5s;
 }
 
-
-
-
 .welcome{
-
-
     font-family:Georgia,serif;
 
     font-size:24px;
@@ -1868,15 +479,12 @@ body{
 
     line-height:1.6;
 
-
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:.8s;
 }
 
-
-
-
 .rsvp-box{
-
-
     margin-top:35px;
 
     background:rgba(255,255,255,.7);
@@ -1885,14 +493,12 @@ body{
 
     border-radius:25px;
 
-
+    opacity:0;
+    animation:fadeUp 1.8s ease forwards;
+    animation-delay:1.2s;
 }
 
-
-
 .rsvp-box h4{
-
-
     font-family:'Cormorant Garamond',serif;
 
     font-size:32px;
@@ -1900,15 +506,9 @@ body{
     color:#B07C4C;
 
     margin-bottom:25px;
-
-
 }
 
-
-
 .rsvp-box input{
-
-
     width:320px;
 
     padding:14px;
@@ -1926,15 +526,9 @@ body{
     font-family:Georgia,serif;
 
     font-size:17px;
-
-
 }
 
-
-
 .choice{
-
-
     display:flex;
 
     justify-content:center;
@@ -1942,15 +536,9 @@ body{
     gap:15px;
 
     margin-top:25px;
-
-
 }
 
-
-
 .choice button{
-
-
     padding:12px 25px;
 
     border-radius:30px;
@@ -1964,730 +552,168 @@ body{
     font-family:Georgia,serif;
 
     cursor:pointer;
-
-
 }
 
 
+/* =====================================================
+   КНОПКА МУЗЫКИ
+===================================================== */
 
-/* =========================
-        МОБИЛЬНАЯ ВЕРСИЯ
-========================= */
+.music-btn{
+    position:fixed;
 
+    right:20px;
+    bottom:20px;
 
-@media(max-width:768px){
+    width:55px;
+    height:55px;
 
+    border-radius:50%;
 
-.hero h1{
+    border:1px solid #C8A46B;
 
-    font-size:65px;
+    background:rgba(255,255,255,.8);
 
+    color:#B07C4C;
+
+    font-size:24px;
+
+    z-index:999;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
 
-.iliyas{
-
-    margin-left:-50px;
-
-}
-
-
-.aruzhan{
-
-    margin-right:-50px;
-
-}
-
-
-.amp{
-
-    font-size:60px;
-
-}
-
-
-
-.hero h2{
-
-    font-size:20px;
-
-}
-
-
-
-.invite h3{
-
-    font-size:42px;
-
-}
-
-
-
-.invite p{
-
-    font-size:19px;
-
-}
-
-
-
-.owners h4{
-
-    font-size:32px;
-
-}
-
-
-
-.owners p{
-
-    font-size:18px;
-
-}
-
-
-
-.program h3{
-
-    font-size:45px;
-
-}
-
-
-
-.time{
-
-    font-size:32px;
-
-}
-
-
-
-.thanks h3{
-
-    font-size:42px;
-
-}
-
-
-
-.welcome{
-
-    font-size:20px;
-
-}
-
-
-
-.choice{
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-
-
-.choice button{
-
-    width:200px;
-
-}
-
-
-}
-/* =========================
-        ПЛАВНЫЕ АНИМАЦИИ
-========================= */
-
-
-/* первая страница */
-
-.hero .iliyas{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.hero .amp{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.hero .aruzhan{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1s;
-
-}
-
-
-
-.hero h2{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.5s;
-
-}
-
-
-
-/* вторая страница */
-
-
-.invite h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.invite p{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.6s;
-
-}
-
-
-
-.owners{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-/* третья страница */
-
-
-.program h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.program h4{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.4s;
-
-}
-
-
-
-.calendar{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.8s;
-
-}
-
-
-
-.location{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-/* четвёртая страница */
-
-
-.thanks h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.flower{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.welcome{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.8s;
-
-}
-
-
-
-.rsvp-box{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-
-/* сама анимация */
-
-
-@keyframes fadeUp{
-
-
-from{
-
-    opacity:0;
-
-    transform:translateY(40px);
-
-}
-
-
-
-to{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-
-}
-
-/* =========================
-        КРАСИВЫЕ АНИМАЦИИ
-========================= */
-
-
-/* Общая анимация */
+/* =====================================================
+   ОБЩАЯ АНИМАЦИЯ
+===================================================== */
 
 @keyframes fadeUp{
 
     from{
-
         opacity:0;
-
         transform:translateY(40px);
-
     }
-
 
     to{
-
         opacity:1;
-
         transform:translateY(0);
-
     }
-
 }
 
 
+/* =====================================================
+   МОБИЛЬНАЯ ВЕРСИЯ
+===================================================== */
 
-/* ===== 1 СТРАНИЦА ===== */
-
-
-.iliyas{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.amp{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.aruzhan{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1s;
-
-}
-
-
-
-.hero h2{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.5s;
-
-}
-
-
-
-
-/* ===== 2 СТРАНИЦА ===== */
-
-
-.invite h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.invite-content p{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.6s;
-
-}
-
-
-
-.owners{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-
-
-
-/* ===== 3 СТРАНИЦА ===== */
-
-
-.program h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.program h4{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.4s;
-
-}
-
-
-
-.time{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.7s;
-
-}
-
-
-
-.calendar{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1s;
-
-}
-
-
-
-.location{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.3s;
-
-}
-
-
-
-
-/* ===== 4 СТРАНИЦА ===== */
-
-
-.thanks h3{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-}
-
-
-
-.flower{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.5s;
-
-}
-
-
-
-.welcome{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:.8s;
-
-}
-
-
-
-.rsvp-box{
-
-    opacity:0;
-
-    animation:fadeUp 1.8s ease forwards;
-
-    animation-delay:1.2s;
-
-}
-
-.music-btn{
-
-
-    position:fixed;
-
-    right:20px;
-
-    bottom:20px;
-
-
-    width:55px;
-
-    height:55px;
-
-
-    border-radius:50%;
-
-
-    border:1px solid #C8A46B;
-
-
-    background:rgba(255,255,255,.8);
-
-
-    color:#B07C4C;
-
-
-    font-size:24px;
-
-
-    z-index:999;
-
-
-    cursor:pointer;
-
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-
-}
 @media(max-width:768px){
 
-.invite{
+    /* 1 */
 
-    padding:40px 22px;
+    .hero h1{
+        font-size:65px;
+    }
 
-}
+    .iliyas{
+        margin-left:-50px;
+    }
 
-.invite h3{
+    .aruzhan{
+        margin-right:-50px;
+    }
 
-    font-size:56px;
+    .amp{
+        font-size:60px;
+    }
 
-}
+    .hero h2{
+        font-size:20px;
+    }
 
-.invite-top{
 
-    font-size:20px;
+    /* 2 */
 
-}
+    .invite{
+        padding:40px 22px;
+    }
 
-.invite-text{
+    .invite h3{
+        font-size:42px;
+    }
 
-    font-size:20px;
+    .invite p{
+        font-size:19px;
+    }
 
-}
+    .owners h4{
+        font-size:32px;
+    }
 
-.couple .name{
+    .owners p{
+        font-size:18px;
+    }
 
-    font-size:56px;
 
-}
+    /* 3 */
 
-.couple .and{
+    .program{
+        padding:40px 20px;
+    }
 
-    font-size:46px;
+    .program-content{
+        width:100%;
+        max-width:500px;
+    }
 
-}
+    .program h3{
+        font-size:45px;
+    }
 
-.invite-bottom{
+    .program h4{
+        font-size:32px;
+    }
 
-    font-size:20px;
+    .calendar{
+        padding:20px;
+    }
 
-}
+    .week,
+    .days{
+        gap:8px;
+    }
 
-.owners h4{
+    .location h5{
+        font-size:38px;
+    }
 
-    font-size:42px;
+    .location span{
+        font-size:18px;
+    }
 
-}
+    .program .time{
+        font-size:32px;
+    }
 
-.owners p{
 
-    font-size:19px;
+    /* 4 */
 
-}
+    .thanks h3{
+        font-size:42px;
+    }
 
-}
-.hall-name{
-    font-family:'Forum', serif;
-    font-size:44px;
-    font-weight:400;
-    color:#B07C4C;
-    letter-spacing:2px;
-    text-transform:uppercase;
-}
+    .welcome{
+        font-size:20px;
+    }
 
-/* ФИНАЛЬНОЕ ИСПРАВЛЕНИЕ */
+    .choice{
+        flex-direction:column;
+        align-items:center;
+    }
 
-.program h3,
-.program h4 {
-    display: block !important;
-    width: 100% !important;
+    .choice button{
+        width:200px;
+    }
 
-    font-family: 'Cormorant Garamond', serif !important;
-    font-size: 38px !important;
-    font-weight: 600 !important;
-
-    color: #B07C4C !important;
-
-    text-align: center !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-.program h3 {
-    margin: 0 0 15px 0 !important;
-}
-
-.program h4 {
-    margin: 0 0 20px 0 !important;
-}
-
-.program .time {
-    display: block !important;
-    width: 100% !important;
-
-    font-family: 'Cormorant Garamond', serif !important;
-    font-size: 38px !important;
-    font-weight: 600 !important;
-
-    color: #B07C4C !important;
-
-    text-align: center !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
 }
