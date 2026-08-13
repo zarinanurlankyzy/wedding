@@ -282,22 +282,17 @@ body{
 
 }
 
-
 /* =========================
         3 СТРАНИЦА
 ========================= */
 
-
 .program{
-
 
     width:100%;
 
     min-height:100vh;
 
-
     background:url("background.jpg") center/cover no-repeat;
-
 
     display:flex;
 
@@ -305,30 +300,25 @@ body{
 
     align-items:center;
 
-
     text-align:center;
-
 
     padding:40px 25px;
 
-
 }
-
-
 
 
 .program-content{
 
     max-width:500px;
 
-}
+    width:100%;
 
+}
 
 
 .program h3{
 
-
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Cormorant Garamond', serif;
 
     font-size:60px;
 
@@ -339,11 +329,9 @@ body{
 }
 
 
-
 .program h4{
 
-
-    font-family:Georgia,serif;
+    font-family:Georgia, serif;
 
     font-size:25px;
 
@@ -354,11 +342,9 @@ body{
 }
 
 
-
 .time{
 
-
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Cormorant Garamond', serif;
 
     font-size:38px;
 
@@ -371,10 +357,9 @@ body{
 }
 
 
-
-
 .calendar{
 
+    width:100%;
 
     background:rgba(255,255,255,.7);
 
@@ -385,23 +370,21 @@ body{
 }
 
 
-
 .week,
 .days{
 
     display:grid;
 
-    grid-template-columns:repeat(7,1fr);
+    grid-template-columns:repeat(7, 1fr);
 
     gap:12px;
 
 }
 
 
-
 .week span{
 
-    font-family:Georgia,serif;
+    font-family:Georgia, serif;
 
     color:#B07C4C;
 
@@ -410,11 +393,9 @@ body{
 }
 
 
-
 .days span{
 
-
-    font-family:Georgia,serif;
+    font-family:Georgia, serif;
 
     color:#444;
 
@@ -429,9 +410,7 @@ body{
 }
 
 
-
 .days .active{
-
 
     border:2px solid #C8A46B;
 
@@ -448,15 +427,15 @@ body{
 }
 
 
-
-
-
 .location{
+
+    width:100%;
 
     margin-top:30px;
 
-}
+    text-align:center;
 
+}
 
 
 .location-icon{
@@ -466,17 +445,15 @@ body{
 }
 
 
-
 .location p{
 
-    font-family:Georgia,serif;
+    font-family:Georgia, serif;
 
     color:#444;
 
     font-size:18px;
 
 }
-
 
 
 .location h5{
@@ -489,17 +466,18 @@ body{
 
     font-weight:400;
 
-    letter-spacing:3px;
+    letter-spacing:2px;
 
     text-transform:none;
+
+    margin:10px 0;
 
 }
 
 
 .location span{
 
-
-    font-family:Georgia,serif;
+    font-family:Georgia, serif;
 
     color:#444;
 
@@ -507,10 +485,7 @@ body{
 
     line-height:1.7;
 
-
 }
-
-
 
 
 
