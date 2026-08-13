@@ -1,719 +1,2636 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior;
 }
 
 body{
-    overflow-x:hidden;
-    background:#F9F8F4;
+overflow-x;
+background:#F9F8F4;
 }
 
-
-/* =====================================================
-   1 СТРАНИЦА
-===================================================== */
+/* =========================
+1 СТРАНИЦА
+========================= */
 
 .hero{
-    width:100%;
-    height:100vh;
 
-    background:url("background.jpg") center/cover no-repeat;
+width:100%;
+height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+background:url("background.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
 
-    position:relative;
+position:relative;
+
 }
 
 .overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(255,255,255,0.15);
+
+position:absolute;
+inset:0;
+
+background:rgba(255,255,255,0.15);
+
 }
+
+
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    text-align:center;
+
+position:relative;
+z-index:2;
+
+text-align:center;
+
 }
+
+
 
 .names{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    line-height:.8;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+line-height:.8;
+
 }
+
+
 
 .hero h1{
-    font-family:'Ballet',cursive;
-    font-size:95px;
-    font-weight:400;
-    color:#B07C4C;
+
+font-family:'Ballet',cursive;
+
+font-size:95px;
+
+font-weight:400;
+
+color:#B07C4C;
+
 }
+
+
 
 .iliyas{
-    align-self:flex-start;
-    margin-left:-90px;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
+align-self:flex-start;
+
+margin-left:-90px;
+
 }
+
+
 
 .amp{
-    font-size:80px;
-    margin:20px 0;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:.5s;
+font-size:80px;
+
+margin:20px 0;
+
 }
+
+
 
 .aruzhan{
-    align-self:flex-end;
-    margin-right:-90px;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:1s;
+align-self:flex-end;
+
+margin-right:-90px;
+
 }
+
+
 
 .hero h2{
-    margin-top:40px;
 
-    font-family:Georgia,serif;
-    font-size:26px;
-    color:#444;
-    letter-spacing:2px;
+margin-top:40px;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:1.5s;
+font-family:Georgia,serif;
+
+font-size:26px;
+
+color:#444;
+
+letter-spacing:2px;
+
 }
 
-
-/* =====================================================
-   2 СТРАНИЦА
-===================================================== */
+/* =========================
+2 СТРАНИЦА
+========================= */
 
 .invite{
-    width:100%;
-    min-height:100vh;
 
-    background:#ffffff;
+min-height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+background:#ffffff;
 
-    padding:40px 25px;
+display:flex;
 
-    text-align:center;
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:60px 30px;
+
 }
 
 .invite-content{
-    width:100%;
-    max-width:850px;
+
+max-width:760px;
+
 }
 
 .invite h3{
-    font-family:'Cormorant Garamond',serif;
-    font-size:60px;
-    color:#B07C4C;
-    font-weight:600;
 
-    margin-bottom:35px;
+font-family:'Ballet',cursive;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
+font-size:74px;
+
+font-weight:400;
+
+color:#B07C4C;
+
+margin-bottom:20px;
+
 }
 
-.line{
-    width:120px;
-    height:1px;
+.invite-top{
 
-    background:#C8A46B;
+font-family:Georgia,serif;
 
-    margin:25px auto;
+font-size:29px;
+
+font-weight:600;
+
+line-height:1.7;
+
+color:#444;
+
+margin-bottom:45px;
+
 }
 
-.invite p{
-    font-family:Georgia,serif;
-    font-size:25px;
-    line-height:1.9;
-    color:#444;
+.invite-text{
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:.6s;
+font-family:Georgia,serif;
+
+font-size:28px;
+
+font-weight:600;
+
+color:#444;
+
+margin-bottom:25px;
+
+}
+
+.couple{
+
+margin:20px 0 35px;
+
+}
+
+.couple .name{
+
+font-family:'Ballet',cursive;
+
+font-size:78px;
+
+color:#B07C4C;
+
+font-weight:400;
+
+line-height:1.05;
+
+}
+
+.couple .and{
+
+font-family:'Ballet',cursive;
+
+font-size:62px;
+
+color:#B07C4C;
+
+margin:10px 0;
+
+}
+
+.invite-bottom{
+
+font-family:Georgia,serif;
+
+font-size:28px;
+
+font-weight:600;
+
+line-height:1.8;
+
+color:#444;
+
+margin-top:20px;
+
 }
 
 .owners{
-    margin-top:45px;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:1.2s;
+margin-top:60px;
+
 }
 
 .owners h4{
-    font-family:'Cormorant Garamond',serif;
-    font-size:38px;
-    color:#B07C4C;
-    font-weight:600;
 
-    margin-bottom:15px;
+font-family:'Ballet',cursive;
+
+font-size:54px;
+
+color:#B07C4C;
+
+font-weight:400;
+
+margin-bottom:18px;
+
 }
 
 .owners p{
-    font-family:Georgia,serif;
-    font-size:22px;
-    line-height:1.8;
-    color:#444;
+
+font-family:Georgia,serif;
+
+font-size:25px;
+
+font-weight:600;
+
+line-height:1.8;
+
+color:#444;
+
+}/* =========================
+3 СТРАНИЦА
+========================= */
+
+.program {
+width: 100%;
+min-height: 100vh;
+
+background: url("background.jpg") center/cover no-repeat;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+
+padding: 40px 25px;
+
 }
 
-
-/* =====================================================
-   3 СТРАНИЦА
-===================================================== */
-
-.program{
-    width:100%;
-    min-height:100vh;
-
-    background:url("background.jpg") center/cover no-repeat;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:40px 25px;
+.program-content {
+width: 100%;
+max-width: 500px;
+margin: 0 auto;
+text-align: center;
 }
 
-.program-content{
-    width:100%;
-    max-width:500px;
+/* ЗАГОЛОВОК */
 
-    margin:0 auto;
+.program h3 {
+display: block;
 
-    text-align:center;
+margin: 0 0 12px 0;
+
+font-family: 'Cormorant Garamond', serif;
+font-size: 60px;
+font-weight: 600;
+
+color: #B07C4C;
+
+text-align: center;
+
 }
 
+/* МЕСЯЦ */
 
-/* ---------- ЗАГОЛОВОК ---------- */
+.program h4 {
+display: block;
 
-.program h3{
-    display:block;
-    width:100%;
+margin: 0 0 25px 0;
 
-    margin:0 0 10px 0;
+font-family: 'Cormorant Garamond', serif;
+font-size: 38px;
+font-weight: 600;
 
-    font-family:'Cormorant Garamond',serif;
+color: #B07C4C;
 
-    font-size:60px;
-    line-height:1.1;
+text-align: center;
 
-    color:#B07C4C;
-
-    font-weight:600;
-
-    text-align:center;
-
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
 }
 
+/* КАЛЕНДАРЬ */
 
-/* ---------- ДАТА ---------- */
+.calendar {
+width: 100%;
 
-.program h4{
-    display:block;
-    width:100%;
+background: rgba(255,255,255,.7);
 
-    margin:0 0 25px 0;
+padding: 25px;
 
-    font-family:'Cormorant Garamond',serif;
+border-radius: 20px;
 
-    font-size:38px;
-    line-height:1.2;
+margin: 0 auto;
 
-    color:#B07C4C;
-
-    font-weight:600;
-
-    text-align:center;
-
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:.4s;
-}
-
-
-/* ---------- КАЛЕНДАРЬ ---------- */
-
-.calendar{
-    width:100%;
-
-    margin:0 auto;
-
-    background:rgba(255,255,255,.7);
-
-    padding:25px;
-
-    border-radius:20px;
-
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:.8s;
 }
 
 .week,
-.days{
-    display:grid;
+.days {
+display: grid;
 
-    grid-template-columns:repeat(7,1fr);
+grid-template-columns: repeat(7, 1fr);
 
-    gap:12px;
+gap: 12px;
 
-    width:100%;
 }
 
-.week span{
-    font-family:Georgia,serif;
+.week span {
+font-family: Georgia, serif;
 
-    color:#B07C4C;
+color: #B07C4C;
 
-    font-weight:bold;
+font-weight: bold;
 
-    text-align:center;
+text-align: center;
+
 }
 
-.days span{
-    font-family:Georgia,serif;
+.days span {
+font-family: Georgia, serif;
 
-    color:#444;
+color: #444;
 
-    height:35px;
+height: 35px;
 
-    display:flex;
+display: flex;
 
-    justify-content:center;
-    align-items:center;
+justify-content: center;
 
-    text-align:center;
+align-items: center;
+
 }
 
-.days .active{
-    width:38px;
-    height:38px;
+.days .active {
+border: 2px solid #C8A46B;
 
-    margin:auto;
+border-radius: 50%;
 
-    border:2px solid #C8A46B;
+width: 38px;
+height: 38px;
 
-    border-radius:50%;
+margin: auto;
 
-    color:#B07C4C;
+color: #B07C4C;
+
 }
 
+/* АДРЕС */
 
-/* ---------- АДРЕС ---------- */
+.location {
+width: 100%;
 
-.location{
-    width:100%;
+margin: 30px auto 0;
 
-    margin:30px auto 0;
+text-align: center;
 
-    text-align:center;
-
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:1.2s;
 }
 
-.location-icon{
-    font-size:28px;
-
-    text-align:center;
+.location-icon {
+font-size: 28px;
 }
 
-.location p{
-    margin:8px 0;
+.location p {
+font-family: Georgia, serif;
 
-    font-family:Georgia,serif;
+color: #444;
 
-    color:#444;
+font-size: 18px;
 
-    font-size:18px;
+text-align: center;
 
-    text-align:center;
+margin: 8px 0;
+
 }
 
-.location h5{
-    display:block;
+.location h5 {
+font-family: 'Forum', serif;
 
-    width:100%;
+font-size: 44px;
 
-    margin:10px 0;
+color: #B07C4C;
 
-    font-family:'Forum',serif;
+font-weight: 400;
 
-    font-size:44px;
+letter-spacing: 2px;
 
-    line-height:1.2;
+text-align: center;
 
-    color:#B07C4C;
+margin: 10px 0;
 
-    font-weight:400;
-
-    letter-spacing:2px;
-
-    text-align:center;
-
-    text-transform:none;
 }
 
-.location span{
-    display:block;
+.location span {
+display: block;
 
-    width:100%;
+font-family: Georgia, serif;
 
-    font-family:Georgia,serif;
+color: #444;
 
-    color:#444;
+font-size: 18px;
 
-    font-size:18px;
+line-height: 1.7;
 
-    line-height:1.7;
+text-align: center;
 
-    text-align:center;
 }
 
+/* ВРЕМЯ */
 
-/* ---------- ВРЕМЯ ---------- */
+.program .time {
+width: 100%;
 
-.program .time{
-    display:block;
+margin: 30px auto 0;
 
-    width:100%;
+font-family: 'Cormorant Garamond', serif;
 
-    margin:30px auto 0;
+font-size: 38px;
 
-    font-family:'Cormorant Garamond',serif;
+font-weight: 600;
 
-    font-size:38px;
+color: #B07C4C;
 
-    line-height:1.2;
+text-align: center;
 
-    color:#B07C4C;
-
-    font-weight:600;
-
-    text-align:center;
 }
 
+/* МОБИЛЬНАЯ ВЕРСИЯ */
 
-/* =====================================================
-   4 СТРАНИЦА
-===================================================== */
+@media (max-width: 768px) {
+
+.program {
+    padding: 40px 20px;
+}
+
+.program-content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.program h3 {
+    font-size: 45px;
+}
+
+.program h4 {
+    font-size: 32px;
+}
+
+.program .time {
+    font-size: 32px;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.location h5 {
+    font-size: 38px;
+}
+
+}
+
+/* =========================
+4 СТРАНИЦА
+========================= */
+
+/* =========================
+4 СТРАНИЦА
+========================= */
 
 .thanks{
-    width:100%;
-    min-height:100vh;
 
-    background:url("background.jpg") center/cover no-repeat;
+min-height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+background:url("background.jpg") center/cover no-repeat;
 
-    text-align:center;
+display:flex;
 
-    padding:40px 25px;
+justify-content:center;
+
+align-items:center;
+
+padding:40px 25px;
+
 }
 
-.thanks-content{
-    width:100%;
-    max-width:500px;
+.survey{
+
+width:100%;
+
+max-width:430px;
+
 }
 
-.thanks h3{
-    font-family:'Cormorant Garamond',serif;
+.survey h3{
 
-    font-size:58px;
-    line-height:1.25;
+text-align:center;
 
-    color:#B07C4C;
+font-family:'Ballet',cursive;
 
-    font-weight:600;
+font-size:58px;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
+color:#B07C4C;
+
+font-weight:400;
+
+margin-bottom:18px;
+
 }
 
-.flower{
-    font-size:35px;
+.survey-subtitle{
 
-    color:#B07C4C;
+text-align:center;
 
-    margin:30px 0;
+font-family:Georgia,serif;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:.5s;
+font-size:22px;
+
+font-weight:600;
+
+color:#444;
+
+line-height:1.4;
+
+letter-spacing:1px;
+
+margin-bottom:30px;
+
 }
 
-.welcome{
-    font-family:Georgia,serif;
+.survey input[type=text]{
 
-    font-size:24px;
+width:100%;
 
-    color:#444;
+height:48px;
 
-    line-height:1.6;
+border:1px solid #d5d5d5;
 
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:.8s;
+border-radius:30px;
+
+padding-left:18px;
+
+font-size:18px;
+
+font-family:Georgia,serif;
+
+outline:none;
+
+background:white;
+
 }
 
-.rsvp-box{
-    margin-top:35px;
+.survey input::placeholder{
 
-    background:rgba(255,255,255,.7);
+color:#777;
 
-    padding:30px;
+font-weight:600;
 
-    border-radius:25px;
-
-    opacity:0;
-    animation:fadeUp 1.8s ease forwards;
-    animation-delay:1.2s;
 }
 
-.rsvp-box h4{
-    font-family:'Cormorant Garamond',serif;
+.survey-note{
 
-    font-size:32px;
+margin-top:18px;
 
-    color:#B07C4C;
+font-size:15px;
 
-    margin-bottom:25px;
+font-family:Georgia,serif;
+
+color:#666;
+
+line-height:1.5;
+
+text-align:left;
+
 }
 
-.rsvp-box input{
-    width:320px;
+.question{
 
-    padding:14px;
+margin-top:25px;
 
-    border:none;
+margin-bottom:15px;
 
-    border-bottom:1px solid #C8A46B;
+font-size:18px;
 
-    background:transparent;
+font-family:Georgia,serif;
 
-    outline:none;
+font-weight:700;
 
-    text-align:center;
+color:#444;
 
-    font-family:Georgia,serif;
-
-    font-size:17px;
 }
 
-.choice{
-    display:flex;
+.radio{
 
-    justify-content:center;
+display:flex;
 
-    gap:15px;
+align-items:flex-start;
 
-    margin-top:25px;
+gap:12px;
+
+margin-bottom:18px;
+
+cursor:pointer;
+
 }
 
-.choice button{
-    padding:12px 25px;
+.radio input{
 
-    border-radius:30px;
+margin-top:4px;
 
-    border:1px solid #C8A46B;
-
-    background:white;
-
-    color:#B07C4C;
-
-    font-family:Georgia,serif;
-
-    cursor:pointer;
 }
 
+.radio span{
 
-/* =====================================================
-   КНОПКА МУЗЫКИ
-===================================================== */
+font-family:Georgia,serif;
 
-.music-btn{
-    position:fixed;
+font-size:18px;
 
-    right:20px;
-    bottom:20px;
+color:#444;
 
-    width:55px;
-    height:55px;
+line-height:1.5;
 
-    border-radius:50%;
-
-    border:1px solid #C8A46B;
-
-    background:rgba(255,255,255,.8);
-
-    color:#B07C4C;
-
-    font-size:24px;
-
-    z-index:999;
-
-    cursor:pointer;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
+.send-btn{
 
-/* =====================================================
-   ОБЩАЯ АНИМАЦИЯ
-===================================================== */
+display:block;
 
-@keyframes fadeUp{
+margin:35px auto 0;
 
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
+width:170px;
 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+height:44px;
+
+border:none;
+
+border-radius:30px;
+
+background:#B07C4C;
+
+color:white;
+
+font-family:Georgia,serif;
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
 }
 
+.send-btn{
 
-/* =====================================================
-   МОБИЛЬНАЯ ВЕРСИЯ
-===================================================== */
+transform:translateY(-2px);
+
+box-shadow:0 10px 20px rgba(176,124,76,.25);
+
+}
+
+/* =========================
+МОБИЛЬНАЯ ВЕРСИЯ
+========================= */
 
 @media(max-width:768px){
 
-    /* 1 */
+.hero h1{
 
-    .hero h1{
-        font-size:65px;
-    }
+font-size:65px;
 
-    .iliyas{
-        margin-left:-50px;
-    }
+}
 
-    .aruzhan{
-        margin-right:-50px;
-    }
+.iliyas{
 
-    .amp{
-        font-size:60px;
-    }
+margin-left:-50px;
 
-    .hero h2{
-        font-size:20px;
-    }
+}
 
+.aruzhan{
 
-    /* 2 */
+margin-right:-50px;
 
-    .invite{
-        padding:40px 22px;
-    }
+}
 
-    .invite h3{
-        font-size:42px;
-    }
+.amp{
 
-    .invite p{
-        font-size:19px;
-    }
+font-size:60px;
 
-    .owners h4{
-        font-size:32px;
-    }
-
-    .owners p{
-        font-size:18px;
-    }
+}
 
 
-    /* 3 */
 
-    .program{
-        padding:40px 20px;
-    }
+.hero h2{
 
-    .program-content{
-        width:100%;
-        max-width:500px;
-    }
+font-size:20px;
 
-    .program h3{
-        font-size:45px;
-    }
-
-    .program h4{
-        font-size:32px;
-    }
-
-    .calendar{
-        padding:20px;
-    }
-
-    .week,
-    .days{
-        gap:8px;
-    }
-
-    .location h5{
-        font-size:38px;
-    }
-
-    .location span{
-        font-size:18px;
-    }
-
-    .program .time{
-        font-size:32px;
-    }
+}
 
 
-    /* 4 */
 
-    .thanks h3{
-        font-size:42px;
-    }
+.invite h3{
 
-    .welcome{
-        font-size:20px;
-    }
+font-size:42px;
 
-    .choice{
-        flex-direction:column;
-        align-items:center;
-    }
+}
 
-    .choice button{
-        width:200px;
-    }
+
+
+.invite p{
+
+font-size:19px;
+
+}
+
+
+
+.owners h4{
+
+font-size:32px;
+
+}
+
+
+
+.owners p{
+
+font-size:18px;
+
+}
+
+
+
+.program h3{
+
+font-size:45px;
+
+}
+
+
+
+.time{
+
+font-size:32px;
+
+}
+
+
+
+.thanks h3{
+
+font-size:42px;
+
+}
+
+
+
+.welcome{
+
+font-size:20px;
+
+}
+
+
+
+.choice{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+
+.choice button{
+
+width:200px;
+
+}
+
+}
+/* =========================
+ПЛАВНЫЕ АНИМАЦИИ
+========================= */
+
+/* первая страница */
+
+.hero .iliyas{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.hero .amp{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.hero .aruzhan{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1s;
+
+}
+
+
+
+.hero h2{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.5s;
+
+}
+
+
+
+/* вторая страница */
+
+.invite h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.invite p{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.6s;
+
+}
+
+
+
+.owners{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+/* третья страница */
+
+.program h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.program h4{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.4s;
+
+}
+
+
+
+.calendar{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.8s;
+
+}
+
+
+
+.location{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+/* четвёртая страница */
+
+.thanks h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.flower{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.welcome{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.8s;
+
+}
+
+
+
+.rsvp-box{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+
+
+/* сама анимация */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =========================
+КРАСИВЫЕ АНИМАЦИИ
+========================= */
+
+/* Общая анимация */
+
+@keyframes fadeUp{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+}
+
+
+
+/* ===== 1 СТРАНИЦА ===== */
+
+.iliyas{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.amp{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.aruzhan{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1s;
+
+}
+
+
+
+.hero h2{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.5s;
+
+}
+
+
+
+/* ===== 2 СТРАНИЦА ===== */
+
+.invite h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.invite-content p{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.6s;
+
+}
+
+
+
+.owners{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+/* ===== 3 СТРАНИЦА ===== */
+
+.program h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.program h4{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.4s;
+
+}
+
+
+
+.time{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.7s;
+
+}
+
+
+
+.calendar{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1s;
+
+}
+
+
+
+.location{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.3s;
+
+}
+
+
+
+/* ===== 4 СТРАНИЦА ===== */
+
+.thanks h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.flower{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.welcome{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.8s;
+
+}
+
+
+
+.rsvp-box{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+.music-btn{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+
+width:55px;
+
+height:55px;
+
+
+border-radius:50%;
+
+
+border:1px solid #C8A46B;
+
+
+background:rgba(255,255,255,.8);
+
+
+color:#B07C4C;
+
+
+font-size:24px;
+
+
+z-index:999;
+
+
+cursor:pointer;
+
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+style_fixed.css
+*{
+margin:0;
+padding:0;
+box-sizing;
+}
+
+html{
+scroll-behavior;
+}
+
+body{
+overflow-x;
+background:#F9F8F4;
+}
+
+/* =========================
+1 СТРАНИЦА
+========================= */
+
+.hero{
+
+width:100%;
+height:100vh;
+
+background:url("background.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+
+position:relative;
+
+}
+
+.overlay{
+
+position:absolute;
+inset:0;
+
+background:rgba(255,255,255,0.15);
+
+}
+
+
+
+.hero-content{
+
+position:relative;
+z-index:2;
+
+text-align:center;
+
+}
+
+
+
+.names{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+line-height:.8;
+
+}
+
+
+
+.hero h1{
+
+font-family:'Ballet',cursive;
+
+font-size:95px;
+
+font-weight:400;
+
+color:#B07C4C;
+
+}
+
+
+
+.iliyas{
+
+align-self:flex-start;
+
+margin-left:-90px;
+
+}
+
+
+
+.amp{
+
+font-size:80px;
+
+margin:20px 0;
+
+}
+
+
+
+.aruzhan{
+
+align-self:flex-end;
+
+margin-right:-90px;
+
+}
+
+
+
+.hero h2{
+
+margin-top:40px;
+
+font-family:Georgia,serif;
+
+font-size:26px;
+
+color:#444;
+
+letter-spacing:2px;
+
+}
+
+
+
+/* =========================
+2 СТРАНИЦА
+========================= */
+
+.invite{
+
+width:100%;
+
+min-height:100vh;
+
+background:white;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+
+padding:40px 25px;
+
+text-align:center;
+
+}
+
+
+
+.invite-content{
+
+max-width:850px;
+
+}
+
+
+
+.invite h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:60px;
+
+color:#B07C4C;
+
+font-weight:600;
+
+margin-bottom:35px;
+
+}
+
+
+
+.line{
+
+width:120px;
+
+height:1px;
+
+background:#C8A46B;
+
+margin:25px auto;
+
+}
+
+
+
+.invite p{
+
+font-family:Georgia,serif;
+
+font-size:25px;
+
+line-height:1.9;
+
+color:#444;
+
+}
+
+
+
+.owners{
+
+margin-top:45px;
+
+}
+
+
+
+.owners h4{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:38px;
+
+color:#B07C4C;
+
+font-weight:600;
+
+margin-bottom:15px;
+
+}
+
+
+
+.owners p{
+
+font-family:Georgia,serif;
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#444;
+
+}
+
+
+
+
+
+/* =========================
+3 СТРАНИЦА
+========================= */
+
+.program{
+
+width:100%;
+
+min-height:100vh;
+
+
+background:url("background.jpg") center/cover no-repeat;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+
+text-align:center;
+
+
+padding:40px 25px;
+
+}
+
+
+
+.program-content{
+
+max-width:500px;
+
+}
+
+
+
+.program h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:60px;
+
+color:#B07C4C;
+
+font-weight:600;
+
+}
+
+
+
+.program h4{
+
+font-family:Georgia,serif;
+
+font-size:25px;
+
+color:#444;
+
+margin:15px 0 20px;
+
+}
+
+
+
+.time{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:38px;
+
+color:#B07C4C;
+
+font-weight:600;
+
+margin-bottom:30px;
+
+}
+
+
+
+.calendar{
+
+background:rgba(255,255,255,.7);
+
+padding:25px;
+
+border-radius:20px;
+
+}
+
+
+
+.week,
+.days{
+
+display:grid;
+
+grid-template-columns:repeat(7,1fr);
+
+gap:12px;
+
+}
+
+
+
+.week span{
+
+font-family:Georgia,serif;
+
+color:#B07C4C;
+
+font-weight:bold;
+
+}
+
+
+
+.days span{
+
+font-family:Georgia,serif;
+
+color:#444;
+
+height:35px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+
+
+.days .active{
+
+border:2px solid #C8A46B;
+
+border-radius:50%;
+
+width:38px;
+
+height:38px;
+
+margin:auto;
+
+color:#B07C4C;
+
+}
+
+
+
+
+
+.location{
+
+margin-top:30px;
+
+}
+
+
+
+.location-icon{
+
+font-size:28px;
+
+}
+
+
+
+.location p{
+
+font-family:Georgia,serif;
+
+color:#444;
+
+font-size:18px;
+
+}
+
+
+
+.location h5{
+
+font-family:'Ballet',cursive;
+
+font-size:55px;
+
+color:#B07C4C;
+
+font-weight:400;
+
+}
+
+
+
+.location span{
+
+font-family:Georgia,serif;
+
+color:#444;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+
+
+
+
+/* =========================
+4 СТРАНИЦА
+========================= */
+
+.thanks{
+
+width:100%;
+
+min-height:100vh;
+
+
+background:url("background.jpg") center/cover no-repeat;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+
+text-align:center;
+
+
+padding:40px 25px;
+
+}
+
+
+
+.thanks-content{
+
+max-width:500px;
+
+}
+
+
+
+.thanks h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:58px;
+
+line-height:1.25;
+
+color:#B07C4C;
+
+font-weight:600;
+
+}
+
+
+
+.flower{
+
+font-size:35px;
+
+color:#B07C4C;
+
+margin:30px 0;
+
+}
+
+
+
+.welcome{
+
+font-family:Georgia,serif;
+
+font-size:24px;
+
+color:#444;
+
+line-height:1.6;
+
+}
+
+
+
+.rsvp-box{
+
+margin-top:35px;
+
+background:rgba(255,255,255,.7);
+
+padding:30px;
+
+border-radius:25px;
+
+}
+
+
+
+.rsvp-box h4{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:32px;
+
+color:#B07C4C;
+
+margin-bottom:25px;
+
+}
+
+
+
+.rsvp-box input{
+
+width:320px;
+
+padding:14px;
+
+border:none;
+
+border-bottom:1px solid #C8A46B;
+
+background:transparent;
+
+outline:none;
+
+text-align:center;
+
+font-family:Georgia,serif;
+
+font-size:17px;
+
+}
+
+
+
+.choice{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-top:25px;
+
+}
+
+
+
+.choice button{
+
+padding:12px 25px;
+
+border-radius:30px;
+
+border:1px solid #C8A46B;
+
+background:white;
+
+color:#B07C4C;
+
+font-family:Georgia,serif;
+
+cursor:pointer;
+
+}
+
+
+
+/* =========================
+МОБИЛЬНАЯ ВЕРСИЯ
+========================= */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:65px;
+
+}
+
+.iliyas{
+
+margin-left:-50px;
+
+}
+
+.aruzhan{
+
+margin-right:-50px;
+
+}
+
+.amp{
+
+font-size:60px;
+
+}
+
+
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+
+
+.invite h3{
+
+font-size:42px;
+
+}
+
+
+
+.invite p{
+
+font-size:19px;
+
+}
+
+
+
+.owners h4{
+
+font-size:32px;
+
+}
+
+
+
+.owners p{
+
+font-size:18px;
+
+}
+
+
+
+.program h3{
+
+font-size:45px;
+
+}
+
+
+
+.time{
+
+font-size:32px;
+
+}
+
+
+
+.thanks h3{
+
+font-size:42px;
+
+}
+
+
+
+.welcome{
+
+font-size:20px;
+
+}
+
+
+
+.choice{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+
+.choice button{
+
+width:200px;
+
+}
+
+}
+/* =========================
+ПЛАВНЫЕ АНИМАЦИИ
+========================= */
+
+/* первая страница */
+
+.hero .iliyas{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.hero .amp{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.hero .aruzhan{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1s;
+
+}
+
+
+
+.hero h2{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.5s;
+
+}
+
+
+
+/* вторая страница */
+
+.invite h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.invite p{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.6s;
+
+}
+
+
+
+.owners{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+/* третья страница */
+
+.program h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.program h4{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.4s;
+
+}
+
+
+
+.calendar{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.8s;
+
+}
+
+
+
+.location{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+/* четвёртая страница */
+
+.thanks h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.flower{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.welcome{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.8s;
+
+}
+
+
+
+.rsvp-box{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+
+
+/* сама анимация */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =========================
+КРАСИВЫЕ АНИМАЦИИ
+========================= */
+
+/* Общая анимация */
+
+@keyframes fadeUp{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+}
+
+
+
+/* ===== 1 СТРАНИЦА ===== */
+
+.iliyas{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.amp{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.aruzhan{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1s;
+
+}
+
+
+
+.hero h2{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.5s;
+
+}
+
+
+
+/* ===== 2 СТРАНИЦА ===== */
+
+.invite h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.invite-content p{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.6s;
+
+}
+
+
+
+.owners{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+
+/* ===== 3 СТРАНИЦА ===== */
+
+.program h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.program h4{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.4s;
+
+}
+
+
+
+.time{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.7s;
+
+}
+
+
+
+.calendar{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1s;
+
+}
+
+
+
+.location{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.3s;
+
+}
+
+
+
+/* ===== 4 СТРАНИЦА ===== */
+
+.thanks h3{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+}
+
+
+
+.flower{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.5s;
+
+}
+
+
+
+.welcome{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:.8s;
+
+}
+
+
+
+.rsvp-box{
+
+opacity:0;
+
+animation:fadeUp 1.8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+.music-btn{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+
+width:55px;
+
+height:55px;
+
+
+border-radius:50%;
+
+
+border:1px solid #C8A46B;
+
+
+background:rgba(255,255,255,.8);
+
+
+color:#B07C4C;
+
+
+font-size:24px;
+
+
+z-index:999;
+
+
+cursor:pointer;
+
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+@media(max-width:768px){
+
+.invite{
+
+padding:40px 22px;
+
+}
+
+.invite h3{
+
+font-size:56px;
+
+}
+
+.invite-top{
+
+font-size:20px;
+
+}
+
+.invite-text{
+
+font-size:20px;
+
+}
+
+.couple .name{
+
+font-size:56px;
+
+}
+
+.couple .and{
+
+font-size:46px;
+
+}
+
+.invite-bottom{
+
+font-size:20px;
+
+}
+
+.owners h4{
+
+font-size:42px;
+
+}
+
+.owners p{
+
+font-size:19px;
+
+}
+
+}
+.hall-name{
+font-family:'Forum', serif;
+font-size:44px;
+font-weight:400;
+color:#B07C4C;
+letter-spacing:2px;
+text-transform;
+}
+
+/* ФИНАЛЬНОЕ ИСПРАВЛЕНИЕ */
+
+.program h3,
+.program h4 {
+display: block !important;
+width: 100% !important;
+
+font-family: 'Cormorant Garamond', serif !important;
+font-size: 38px !important;
+font-weight: 600 !important;
+
+color: #B07C4C !important;
+
+text-align: center !important;
+
+opacity: 1 !important;
+visibility: visible !important;
+
+}
+
+.program h3 {
+margin: 0 0 15px 0 !important;
+}
+
+.program h4 {
+margin: 0 0 20px 0 !important;
+}
+
+.program .time {
+display: block !important;
+width: 100% !important;
+
+font-family: 'Cormorant Garamond', serif !important;
+font-size: 38px !important;
+font-weight: 600 !important;
+
+color: #B07C4C !important;
+
+text-align: center !important;
+
+opacity: 1 !important;
+visibility: visible !important;
 
 }
